@@ -1,0 +1,47 @@
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; background: #f4f6f8; color: #222; }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #0f766e; color: #fff; }
+.nav a.brand { color: #fff; font-weight: 700; font-size: 1.3rem; text-decoration: none; }
+.nav span { margin-right: 12px; }
+.container { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+.card { max-width: 380px; margin: 40px auto; padding: 24px; background: #fff; border-radius: 8px; box-shadow: 0 1px 6px #0002; display: flex; flex-direction: column; gap: 12px; }
+input, select { padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 1rem; }
+button { padding: 10px 14px; border: 0; border-radius: 6px; background: #0f766e; color: #fff; cursor: pointer; font-size: 1rem; }
+button:hover { background: #115e59; }
+.error { color: #b91c1c; margin: 0; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+.tile { background: #fff; padding: 28px 16px; border-radius: 8px; box-shadow: 0 1px 6px #0002; text-align: center; font-weight: 600; }
+.center { text-align: center; }
+
+a.tile { text-decoration: none; color: inherit; }
+.ok { color: #15803d; margin: 0; }
+.locwrap { position: relative; display: flex; flex-direction: column; gap: 4px; }
+.opts { position: absolute; top: 44px; left: 0; right: 0; z-index: 10; margin: 0; padding: 0; list-style: none; background: #fff; border: 1px solid #ccc; border-radius: 6px; max-height: 200px; overflow-y: auto; }
+.opts li { padding: 8px 10px; cursor: pointer; font-size: 0.9rem; }
+.opts li:hover { background: #e6f4f1; }
+.ride { background: #fff; padding: 14px; margin: 12px 0; border-radius: 8px; box-shadow: 0 1px 6px #0002; }
+
+.badge { padding: 2px 8px; border-radius: 10px; font-size: 0.8rem; background: #e5e7eb; }
+.badge.confirmed, .badge.scheduled { background: #dcfce7; color: #166534; }
+.badge.cancelled { background: #fee2e2; color: #991b1b; }
+.badge.active { background: #dbeafe; color: #1e40af; }
+.badge.completed { background: #e5e7eb; color: #374151; }
+.ride button { margin-top: 8px; }
+.map {
+  height: 320px;
+  margin-top: 8px;
+  border-radius: 6px;
+  position: relative;
+  z-index: 0;
+}
+
+.btnlink {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 10px 14px;
+  background: #0f766e;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
